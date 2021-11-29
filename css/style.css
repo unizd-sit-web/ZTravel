@@ -2,26 +2,24 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-hr {
-  background-color: #fff;
-  border: 8px dotted #7fc8f8;
-  border-bottom: none;
-  width: 40px;
-  margin: 50px auto 50px;
+a {
+  text-decoration: none;
 }
 
-h5 {
+h4, h5 {
   font-weight: bold;
 }
 
+.h4-info {
+  font-weight: normal;
+  margin: 40px 0px 10px;
+}
+
 .page-header {
-  font-family: "Montserrat", sans-serif;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 4%;
   padding: 0px 15px;
   background-color: #f5f3f4;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;
 }
 
 .nav-link {
@@ -40,6 +38,18 @@ h5 {
   background-color: #7fc8f8;
 }
 
+.btn-lg {
+  border-radius: 8px;
+}
+
+.main-separator {
+  background-color: #fff;
+  border: 8px dotted #7fc8f8;
+  border-bottom: none;
+  width: 40px;
+  margin: 50px auto 50px;
+}
+
 .section-header {
   font-size: 1.3rem;
   font-weight: bold;
@@ -48,7 +58,8 @@ h5 {
 }
 
 .col-lg-4 {
-  padding: 0px 30px 60px 30px;
+  padding: 0px 30px;
+  margin-bottom: 60px;
 }
 
 .thumbnail-text {
@@ -58,4 +69,25 @@ h5 {
 
 .info-line {
   font-size: 0.8rem;
+  line-height: 2.3rem;
+}
+
+.location-container {
+  padding: 0% 15%;
+}
+
+#slideshow-container {
+  margin: 30px 0px;
+}
+
+.location-title {
+  color: #003049;
+  font-weight: bold;
+}
+
+.page-footer {
+  margin-top: 15%;
+  height: 200px;
+  padding: 0px 15px;
+  background-color: #014f86;
 }
