@@ -1,5 +1,6 @@
 body {
   font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
 }
 
 a {
@@ -58,7 +59,7 @@ h4, h5 {
 }
 
 .col-lg-4 {
-  padding: 0px 30px;
+  padding: 0px 2%;
   margin-bottom: 60px;
 }
 
@@ -73,7 +74,7 @@ h4, h5 {
 }
 
 .location-container {
-  padding: 0% 15%;
+  padding: 0% 5%;
 }
 
 #slideshow-container {
