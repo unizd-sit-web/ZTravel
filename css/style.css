@@ -67,7 +67,7 @@ h4, h5 {
   margin-top: 15px;
 }
 
-.info-line {
+.attributes-container {
   font-size: 0.8rem;
   line-height: 2.3rem;
 }
@@ -83,6 +83,11 @@ h4, h5 {
 .location-title {
   color: #003049;
   font-weight: bold;
+}
+
+.location-attribute {
+  display: inline-block;
+  margin: 0px 15px 0px 0px;
 }
 
 .page-footer {
