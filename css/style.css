@@ -1,13 +1,15 @@
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 1.1rem;
+  padding: 0px;
 }
 
 a {
   text-decoration: none;
 }
 
-h4, h5 {
+h4,
+h5 {
   font-weight: bold;
 }
 
@@ -17,6 +19,7 @@ h4, h5 {
 }
 
 .page-header {
+  width: 100%;
   margin-bottom: 4%;
   padding: 0px 15px;
   background-color: #f5f3f4;
@@ -91,7 +94,12 @@ h4, h5 {
   margin: 0px 15px 0px 0px;
 }
 
+.contact-icon {
+  margin: 40px 0px 10px;
+}
+
 .page-footer {
+  width: 100%;
   margin-top: 15%;
   height: 200px;
   padding: 0px 15px;
