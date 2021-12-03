@@ -132,7 +132,7 @@
 
     <div class="container-lg">
       <div class="row">
-        <div class="col-lg-4">
+        <div class="col-lg-4 page-1">
           <a href="card-plitvice.html" target="_blank">
             <img
               src="images/location_photos/plitvice-1.jpg"
@@ -168,7 +168,7 @@
           </article>
         </div>
 
-        <div class="col-lg-4">
+        <div class="col-lg-4 page-1">
           <a href="card-krka.html" target="_blank">
             <img
               src="images/location_photos/krka-1.jpg"
@@ -186,8 +186,9 @@
             </p>
             <div class="attributes-container">
               <span class="location-attribute"
-                ><img src="images/icons8-clock-32.png" alt="duration" />
-                5h<span class="location-attribute"></span>
+                ><img src="images/icons8-clock-32.png" alt="duration" /> 5h<span
+                  class="location-attribute"
+                ></span>
                 <img src="images/icons8-holiday-30.png" alt="type" />
                 Relaxing
               </span>
@@ -202,7 +203,7 @@
           </article>
         </div>
 
-        <div class="col-lg-4">
+        <div class="col-lg-4 page-1">
           <img
             src="images/location_photos/kudin-1.jpg"
             alt="location thumbnail"
@@ -239,7 +240,7 @@
           </article>
         </div>
 
-        <div class="col-lg-4">
+        <div class="col-lg-4 page-1">
           <img
             src="images/location_photos/vransko-1.jpg"
             alt="location thumbnail"
@@ -282,7 +283,7 @@
           </article>
         </div>
 
-        <div class="col-lg-4">
+        <div class="col-lg-4 page-1">
           <img
             src="images/location_photos/life-on-mars-1.jpeg"
             alt="location thumbnail"
@@ -313,7 +314,7 @@
           </article>
         </div>
 
-        <div class="col-lg-4">
+        <div class="col-lg-4 page-1">
           <img
             src="images/location_photos/tulove-grede-1.jpg"
             alt="location thumbnail"
@@ -341,8 +342,43 @@
           </article>
         </div>
       </div>
+
+      <nav class="locations-nav">
+        <ul class="pagination">
+          <li class="page-item active">
+            <button class="page-link" onclick="myFunction(1)">1</button>
+          </li>
+          <li class="page-item">
+            <button class="page-link" onclick="myFunction(2)">2</button>
+          </li>
+          <!-- <li class="page-item">
+            <button class="page-link" onclick="myFunction(3)">3</button>
+          </li> -->
+        </ul>
+      </nav>
     </div>
 
     <footer class="page-footer"></footer>
+
+    <script>
+      function myFunction(pageNum) {
+        var pageThumbnails = document.getElementsByClassName("page-" + pageNum);
+
+        var tempPageThumbnails;
+        for (let index = 1; index <= 2; index++) {
+          if (index != pageNum) {
+            tempPageThumbnails = document.getElementsByClassName(
+              "page-" + index
+            );
+            for (var i = 0; i < tempPageThumbnails.length; i++) {
+              tempPageThumbnails[i].style.display = "none";
+            }
+          }
+        }
+        for (var i = 0; i < pageThumbnails.length; i++) {
+          pageThumbnails[i].style.display = "block";
+        }
+      }
+    </script>
   </body>
 </html>

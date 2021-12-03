@@ -94,6 +94,15 @@ h5 {
   margin: 0px 15px 0px 0px;
 }
 
+.locations-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.page-2, .page-3 {
+  display: none;
+}
+
 .contact-icon {
   margin: 40px 0px 10px;
 }
