@@ -2,6 +2,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 1.1rem;
   padding: 0px;
+  
 }
 
 a {
@@ -20,8 +21,9 @@ h5 {
 
 .page-header {
   width: 100%;
+  margin-bottom: 0;
   padding: 0px 15px;
-  background-color: #f5f3f4;
+  background: linear-gradient(#a8e6cf, #fdffab);
   box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;
 }
 
@@ -55,7 +57,6 @@ h5 {
 
 .section-header {
   font-size: 1.3rem;
-  margin-top: 5%;
   font-weight: bold;
   text-align: center;
   color: #c1cee0;
@@ -87,7 +88,6 @@ h5 {
 .location-title {
   color: #003049;
   font-weight: bold;
-  margin-top: 5%;
 }
 
 .location-attribute {
@@ -100,7 +100,9 @@ h5 {
   justify-content: center;
 }
 
-.page-2, .page-3 {
+.page-2,
+.page-3,
+.page-4 {
   display: none;
 }
 
@@ -110,8 +112,128 @@ h5 {
 
 .page-footer {
   width: 100%;
+  position: absolute;
+  background: linear-gradient(to right, #a8e6cf, #fdffab);
   margin-top: 15%;
-  height: 200px;
-  padding: 0px 15px;
+  
+  
+  padding: 2rem 2rem;
   background-color: #014f86;
+  border-top-left-radius: 8rem;
+  font-size: 1.1rem;
+  line-height: normal;
 }
+
+.row{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.col{
+  flex-basis: 33%;
+  padding: 10px;
+}
+
+.col:nth-child(1){
+  flex-basis: 20%;
+  padding: 10px;
+
+}
+
+.col:nth-child(2){
+  flex-basis: 25%;
+  padding: 10px;
+
+}
+
+.logo{
+  width: 5rem;
+  margin-bottom: 2.5rem;
+}
+
+.col h4{
+  width: fit-content;
+  font-weight: normal;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.email-id{
+  width: fit-content;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.15rem;
+  margin: 1rem 0;
+}
+
+ul li{
+  list-style: none;
+  margin: 0.75rem;
+}
+
+a{
+  text-decoration: none;
+  color: #111111;
+}
+
+form{
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+form .far{
+  font-size: 18px;
+  margin-right: 10px;
+  color: rgb(49, 49, 49);
+}
+
+form input{
+  width: 100%;
+  background: transparent;
+  color: #ccc;
+  border: 0;
+  outline: none;
+}
+
+form button{
+  background: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+form button .fas{
+  font-size: 14px;
+  color: rgb(49, 49, 49);
+}
+
+.social .fab{
+  width: 38px;
+  height: 38;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  color: rgb(49, 49, 49);
+  background: rgba(255, 255, 255, 0);
+  margin-right: 20px;
+
+}
+
+hr{
+  width: 80%;
+  border: 0;
+  border-bottom: 1px #fff;
+  margin: 20px auto;
+}
+
+.copyright{
+  text-align: center;
+}
+
