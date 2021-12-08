@@ -21,10 +21,8 @@ h5 {
 
 .page-header {
   width: 100%;
-  margin-bottom: 0;
   padding: 0px 15px;
   background: linear-gradient(#a8e6cf, #fdffab);
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;
 }
 
 .nav-link {
@@ -60,6 +58,7 @@ h5 {
   font-weight: bold;
   text-align: center;
   color: #c1cee0;
+  margin-top: 2.5rem;
 }
 
 .col-lg-4 {
@@ -88,6 +87,7 @@ h5 {
 .location-title {
   color: #003049;
   font-weight: bold;
+  margin-top: 5rem;
 }
 
 .location-attribute {
@@ -124,7 +124,7 @@ h5 {
   line-height: normal;
 }
 
-.row{
+.rows{
   width: 80%;
   margin: auto;
   display: flex;
@@ -176,7 +176,7 @@ ul li{
 
 a{
   text-decoration: none;
-  color: #111111;
+  color: #003049;
 }
 
 form{
@@ -190,13 +190,13 @@ form{
 form .far{
   font-size: 18px;
   margin-right: 10px;
-  color: rgb(49, 49, 49);
+  color: #003049;
 }
 
 form input{
   width: 100%;
   background: transparent;
-  color: #ccc;
+  color: #003049;
   border: 0;
   outline: none;
 }

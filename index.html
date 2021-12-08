@@ -19,6 +19,13 @@
 
     <link rel="shortcut icon" href="images/favicon.ico" />
 
+    <!-- Fontawesome kit-->
+
+    <script
+      src="https://kit.fontawesome.com/07a166e729.js"
+      crossorigin="anonymous"
+    ></script>
+
     <!-- Fonts -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -27,26 +34,6 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;800&display=swap"
       rel="stylesheet"
     />
-
-    <!-- Skripte za neke Bootstrap funkcionalnosti (npr. Menu toggle, Slideshow) -->
-
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-      crossorigin="anonymous"
-    ></script>
   </head>
 
   <body>
@@ -124,6 +111,40 @@
         </div>
       </nav>
     </div>
+
+    <!--Weather widget za pojedinačnu atrakciju-->
+
+    <a
+      class="weatherwidget-io"
+      href="https://forecast7.com/en/44d1215d23/zadar/"
+      data-label_1="ZADAR"
+      data-days="5"
+      data-theme="original"
+      data-basecolor="#fdffab"
+      data-shadow="rgba(50, 3, 3, 0.13)"
+      data-accent="#fdffab"
+      data-textcolor="#003049"
+      data-highcolor="#ff9e00"
+      data-lowcolor="#3082f8"
+      data-suncolor="#ff7600"
+      data-cloudcolor="#97acb9"
+      data-cloudfill="#33585b"
+      data-raincolor="#3082f8"
+      data-snowcolor="#cfcfcf"
+      >ZADAR</a
+    >
+    <script>
+      !(function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (!d.getElementById(id)) {
+          js = d.createElement(s);
+          js.id = id;
+          js.src = "https://weatherwidget.io/js/widget.min.js";
+          fjs.parentNode.insertBefore(js, fjs);
+        }
+      })(document, "script", "weatherwidget-io-js");
+    </script>
 
     <h1 class="section-header">DISCOVER ZADAR COUNTY</h1>
     <hr class="main-separator" />
@@ -204,11 +225,12 @@
         </div>
 
         <div class="col-lg-4 page-1">
-          <img
-            src="images/location_photos/kudin-1.jpg"
-            alt="location thumbnail"
-            class="img-thumbnail"
-          />
+          <a href="card-kudin.html" target="_blank">
+            <img
+              src="images/location_photos/kudin-1.jpg"
+              alt="location thumbnail"
+              class="img-thumbnail"
+          /></a>
           <article class="thumbnail-text">
             <h5>"Kudin most" on Krupa river</h5>
             <p>
@@ -241,11 +263,12 @@
         </div>
 
         <div class="col-lg-4 page-1">
-          <img
-            src="images/location_photos/vransko-1.jpg"
-            alt="location thumbnail"
-            class="img-thumbnail"
-          />
+          <a href="card-vransko.html" target="_blank">
+            <img
+              src="images/location_photos/vransko-1.jpg"
+              alt="location thumbnail"
+              class="img-thumbnail"
+          /></a>
           <article class="thumbnail-text">
             <h5>Nature park Vransko lake</h5>
             <p>
@@ -284,11 +307,12 @@
         </div>
 
         <div class="col-lg-4 page-1">
-          <img
-            src="images/location_photos/life-on-mars-1.jpeg"
-            alt="location thumbnail"
-            class="img-thumbnail"
-          />
+          <a href="card-mars.html" target="_blank">
+            <img
+              src="images/location_photos/life-on-mars-1.jpeg"
+              alt="location thumbnail"
+              class="img-thumbnail"
+          /></a>
           <article class="thumbnail-text">
             <h5>Life On Mars Trail</h5>
             <p>
@@ -315,11 +339,12 @@
         </div>
 
         <div class="col-lg-4 page-1">
-          <img
-            src="images/location_photos/tulove-grede-1.jpg"
-            alt="location thumbnail"
-            class="img-thumbnail"
-          />
+          <a href="card-tulove-grede.html" target="_blank">
+            <img
+              src="images/location_photos/tulove-grede-1.jpg"
+              alt="location thumbnail"
+              class="img-thumbnail"
+          /></a>
           <article class="thumbnail-text">
             <h5>Tulove Grede</h5>
             <p>
@@ -341,31 +366,348 @@
             </div>
           </article>
         </div>
+
+        <div class="col-lg-4 page-2">
+          <a href="card-grabovaca.html" target="_blank">
+            <img
+              src="images/location_photos/grabovaca-1.jpg"
+              alt="location thumbnail"
+              class="img-thumbnail"
+            />
+          </a>
+          <article class="thumbnail-text">
+            <h5>Cave Park Grabovača</h5>
+            <p>
+              Cave park Grabovača, located in Perušić, is the only cave park in
+              Europe which allows visitors to experience the past, thousands of
+              years back.
+            </p>
+            <div class="attributes-container">
+              <span class="location-attribute"
+                ><img src="images/icons8-clock-32.png" alt="duration" />
+                8h</span
+              >
+              <span class="location-attribute"
+                ><img src="images/icons8-trekking-30.png" alt="type" />
+                Hiking</span
+              >
+              <span class="location-attribute">
+                <img
+                  src="images/icons8-cycling-mountain-bike-30.png"
+                  alt="type"
+                />
+                Biking
+              </span>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-lg-4 page-2">
+          <a href="card-kornati.html" target="_blank">
+            <img
+              src="images/location_photos/kornati-1.jpg"
+              alt="location thumbnail"
+              class="img-thumbnail"
+            />
+          </a>
+          <article class="thumbnail-text">
+            <h5>Kornati National Park</h5>
+            <p>
+              Spend a day touring Kornati National Park, one of the most magical
+              places in Croatia. This group of more than 100 islands and cliffs
+              will seduce you at first sight as you ride along.
+            </p>
+            <div class="attributes-container">
+              <span class="location-attribute"
+                ><img src="images/icons8-clock-32.png" alt="duration" /> 5h<span
+                  class="location-attribute"
+                ></span>
+                <img src="images/icons8-holiday-30.png" alt="type" />
+                Relaxing
+              </span>
+              <span class="location-attribute"
+                ><img src="images/icons8-windsurfing-30.png" alt="type" />
+                Watersports</span
+              >
+            </div>
+          </article>
+        </div>
+
+        <div class="col-lg-4 page-2">
+          <a href="card-una.html" target="_blank">
+            <img
+              src="images/location_photos/una-1.jpg"
+              alt="location thumbnail"
+              class="img-thumbnail"
+            />
+          </a>
+          <article class="thumbnail-text">
+            <h5>Una's source</h5>
+            <p>
+              The Una River is a natural border between Croatia and Bosnia. It
+              will steal your heart with her virgin beauty, green clear water
+              and a landscape of dense forests.
+            </p>
+            <div class="attributes-container">
+              <span class="location-attribute"
+                ><img src="images/icons8-clock-32.png" alt="duration" />
+                7h</span
+              >
+              <span class="location-attribute"
+                ><img src="images/icons8-trekking-30.png" alt="type" />
+                Hiking</span
+              >
+              <span class="location-attribute"
+                ><img src="images/free.png" alt="free" /> Free</span
+              >
+            </div>
+          </article>
+        </div>
+
+        <div class="col-lg-4 page-2">
+          <a href="card-velebit.html" target="_blank">
+            <img
+              src="images/location_photos/velebit-1.jpg"
+              alt="location thumbnail"
+              class="img-thumbnail"
+            />
+          </a>
+          <article class="thumbnail-text">
+            <h5>Northern Velebit National Park</h5>
+            <p>
+              Northern Velebit National Park is in the northern part of
+              Croatia's largest mountain range and also the youngest National
+              park. Don't miss out!
+            </p>
+            <div class="attributes-container">
+              <span class="location-attribute"
+                ><img src="images/icons8-clock-32.png" alt="duration" />
+                5h</span
+              >
+              <span class="location-attribute"
+                ><img src="images/icons8-trekking-30.png" alt="type" />
+                Hiking</span
+              >
+              <span class="location-attribute"
+                ><img src="images/free.png" alt="free" /> Free</span
+              >
+            </div>
+          </article>
+        </div>
+
+        <div class="col-lg-4 page-2">
+          <a href="card-paklenica.html" target="_blank">
+            <img
+              src="images/location_photos/paklenica-2.jpg"
+              alt="location thumbnail"
+              class="img-thumbnail"
+            />
+          </a>
+          <article class="thumbnail-text">
+            <h5>Paklenica National Park</h5>
+            <p>
+              isit the home of captivating legends and thrilling adventures,
+              sandy and pebble beaches, hundreds of plant and animal species
+              listed by UNESCO and Winnetou movies!
+            </p>
+            <div class="attributes-container">
+              <span class="location-attribute"
+                ><img src="images/icons8-clock-32.png" alt="duration" />
+                5h</span
+              >
+              <span class="location-attribute"
+                ><img src="images/icons8-trekking-30.png" alt="type" />
+                Hiking</span
+              >
+              <span class="location-attribute">
+                <img
+                  src="images/icons8-cycling-mountain-bike-30.png"
+                  alt="type"
+                />
+                Biking
+              </span>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-lg-4 page-2">
+          <a href="card-zrmanja-rafting.html" target="_blank">
+            <img
+              src="images/location_photos/zrmanja-rafting-1.jpg"
+              alt="location thumbnail"
+              class="img-thumbnail"
+            />
+          </a>
+          <article class="thumbnail-text">
+            <h5>Zrmanja rafting</h5>
+            <p>
+              Zrmanja and Krupa are among the most beautiful rivers in Europe:
+              perfectly clear warm water, spectacular canyon with magnificent
+              waterfall. They are easy and safe enough for beginner canoeists
+              but their scenery makes them also very exciting. The trip begins
+              in Kastel Zegarski, only one hour drive from Zadar.
+            </p>
+            <div class="attributes-container">
+              <span class="location-attribute"
+                ><img src="images/icons8-clock-32.png" alt="duration" />
+                5h</span
+              >
+              <span class="location-attribute">
+                <img
+                  src="images/icons8-windsurfing-30.png"
+                  alt="kid-friendly"
+                />
+                Watersports
+              </span>
+
+              <span class="location-attribute">
+                <img
+                  src="images/icons8-kid-friendly-30.png"
+                  alt="kid-friendly"
+                />
+                Kid-friendly
+              </span>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-lg-4 page-3">
+          <a href="card-cetina.html" target="_blank">
+            <img
+              src="images/location_photos/cetina-1.jpg"
+              alt="location thumbnail"
+              class="img-thumbnail"
+            />
+          </a>
+          <article class="thumbnail-text">
+            <h5>Cetina spring</h5>
+            <p>
+              This splendid spring has an extraordinary shape and color and is
+              one of the sources of the longest river in Dalmatia – the Cetina.
+              It runs for about 65 miles before letting out into the Adriatic
+              Sea. Its waters flow at the foot of the Dinara, the highest
+              mountain massif in Croatia.
+            </p>
+            <div class="attributes-container">
+              <span class="location-attribute"
+                ><img src="images/icons8-clock-32.png" alt="duration" />
+                1h</span
+              >
+              <span class="location-attribute">
+                <img src="images/icons8-holiday-30.png" alt="type" />
+                Relaxing
+              </span>
+              <span class="location-attribute">
+                <img
+                  src="images/icons8-kid-friendly-30.png"
+                  alt="kid-friendly"
+                />
+                Kid-friendly
+              </span>
+              <span class="location-attribute"
+                ><img src="images/free.png" alt="free" /> Free</span
+              >
+            </div>
+          </article>
+        </div>
+
+        <div class="col-lg-4 page-3">
+          <a href="card-cetina-rafting.html" target="_blank">
+            <img
+              src="images/location_photos/cetina-rafting-1.jpg"
+              alt="location thumbnail"
+              class="img-thumbnail"
+            />
+          </a>
+          <article class="thumbnail-text">
+            <h5>Cetina rafting</h5>
+            <p>
+              Cetina River is a great way to enjoy a breath-taking scenery. Due
+              to its waterfalls, caves and jungle-like vegetation make it a
+              must-do activity while in Croatia. The warm Mediterranean climate
+              meets the canyon and creates a setting just like in a fairy tale.
+              Even though the rapids of this river are relatively easy, it will
+              create a memorable experience for all.
+            </p>
+            <div class="attributes-container">
+              <span class="location-attribute"
+                ><img src="images/icons8-clock-32.png" alt="duration" />
+                4h</span
+              >
+              <span class="location-attribute">
+                <img
+                  src="images/icons8-windsurfing-30.png"
+                  alt="kid-friendly"
+                />
+                Watersports
+              </span>
+              <span class="location-attribute">
+                <img
+                  src="images/icons8-kid-friendly-30.png"
+                  alt="kid-friendly"
+                />
+                Kid-friendly
+              </span>
+            </div>
+          </article>
+        </div>
       </div>
 
       <nav class="locations-nav">
         <ul class="pagination">
-          <li class="page-item active">
+          <li class="page-item">
             <button class="page-link" onclick="myFunction(1)">1</button>
           </li>
           <li class="page-item">
             <button class="page-link" onclick="myFunction(2)">2</button>
           </li>
-          <!-- <li class="page-item">
+          <li class="page-item">
             <button class="page-link" onclick="myFunction(3)">3</button>
-          </li> -->
+          </li>
         </ul>
       </nav>
     </div>
 
-    <footer class="page-footer"></footer>
+    <footer class="page-footer">
+      <div class="rows">
+        <div class="col">
+          <h4>Links</h4>
+          <p><a href="">Home</a></p>
+          <p><a href="about-us.html">About us</a></p>
+          <p><a href="contact.html">Contact</a></p>
+        </div>
+        <div class="col">
+          <h4>Contact us</h4>
+          <p>Kalelarga 1</p>
+          <p>23000 Zadar</p>
+          <p class="email-id">fakemail@fakehost.com.</p>
+          <p>+385 95 0000 000</p>
+        </div>
+        <div class="col">
+          <h4>Newsletter</h4>
+          <form>
+            <i class="far fa-envelope"></i>
+            <input type="email" placeholder="Enter your email" required />
+            <button type="submit"><i class="fas fa-arrow-up"></i></button>
+          </form>
+          <div class="social">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-whatsapp"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <p class="copyright">ZID © 2021 - All Rights Reserved</p>
+    </footer>
 
     <script>
       function myFunction(pageNum) {
         var pageThumbnails = document.getElementsByClassName("page-" + pageNum);
 
         var tempPageThumbnails;
-        for (let index = 1; index <= 2; index++) {
+        for (let index = 1; index <= 3; index++) {
           if (index != pageNum) {
             tempPageThumbnails = document.getElementsByClassName(
               "page-" + index
@@ -380,5 +722,25 @@
         }
       }
     </script>
+
+    <!-- Skripte za neke Bootstrap funkcionalnosti (npr. Menu toggle, Slideshow) -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
