@@ -5,3 +5,5 @@
 - Zvonimir Nekić
 - Ivor Grego
 - Dino Damjanović
+
+**Link:** https://unizd-sit-web.github.io/ZTravel/
