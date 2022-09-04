@@ -6,4 +6,12 @@
 - Ivor Grego
 - Dino Damjanović
 
-**Link:** https://unizd-sit-web.github.io/ZTravel/
+**Pokretanje aplikacije:**
+```py -m venv venv```
+
+```.\venv\Scripts\activate``` ili ```.\venv\Scripts\Activate.ps1```
+
+```pip install -r requirements.txt```
+
+
+```flask run```

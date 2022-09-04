@@ -1,0 +1,169 @@
+{% extends 'locations_base.html' %}
+{% block title %} Vransko Lake {% endblock title %}
+{% block content %}
+
+    <div class="container-lg location-container">
+        <section>
+            <h1 class="location-title">Vransko Lake</h1>
+
+            <!-- Slideshow Container -->
+
+            <div
+                    id="slideshow-container"
+                    class="carousel slide"
+                    data-ride="carousel"
+                    data-interval="false"
+            >
+                <!-- Indikatori -->
+
+                <div class="carousel-indicators">
+                    <button
+                            type="button"
+                            data-bs-target="#slideshow-container"
+                            data-bs-slide-to="0"
+                            class="active"
+                    ></button>
+                    <button
+                            type="button"
+                            data-bs-target="#slideshow-container"
+                            data-bs-slide-to="1"
+                    ></button>
+                    <button
+                            type="button"
+                            data-bs-target="#slideshow-container"
+                            data-bs-slide-to="2"
+                    ></button>
+                </div>
+
+                <!-- Slike -->
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img
+                                src="{{ url_for('static', filename='location_photos/vransko-1.jpg') }}"
+                                class="d-block w-100"
+                                alt="vransko-photo"
+                        />
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                                src="{{ url_for('static', filename='location_photos/vransko-2.jpg') }}"
+                                class="d-block w-100"
+                                alt="vransko-photo"
+                        />
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                                src="{{ url_for('static', filename='location_photos/vransko-3.jpg') }}"
+                                class="d-block w-100"
+                                alt="vransko-photo"
+                        />
+                    </div>
+                </div>
+                <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-target="#slideshow-container"
+                        data-slide="prev"
+                >
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-target="#slideshow-container"
+                        data-slide="next"
+                >
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <h4>About</h4>
+            <hr class="in-section-separator"/>
+
+            <div class="attributes-container">
+      <span class="location-attribute"
+      ><img
+              src="{{ url_for('static', filename='icons/icons8-clock-32.png') }}"
+              alt="duration"
+      />
+        3h</span
+      >
+                <br/>
+                <span class="location-attribute"
+                ><img
+                        src="{{ url_for('static', filename='icons/icons8-holiday-30.png') }}"
+                        alt="type"
+                />
+        Relaxing</span
+                >
+                <br/>
+                <span class="location-attribute">
+        <img
+                src="{{ url_for('static', filename='icons/icons8-kid-friendly-30.png') }}"
+                alt="kid-friendly"
+        />
+        Kid-friendly
+      </span>
+                <br/>
+                <span class="location-attribute">
+        <img
+                src="{{ url_for('static', filename='icons/icons8-cycling-mountain-bike-30.png') }}"
+                alt="type"
+        />
+        Biking
+      </span>
+            </div>
+
+            <h4 class="h4-info">Price</h4>
+            <p>Detailed price table can be found at the official website below.</p>
+            <a
+                    href="https://www.vranalake.hr/en/camp-pakostane-biograd-dalmatia/price-calculation"
+                    target="_blank"
+            >
+                <button class="btn btn-dark btn-lg">Prices</button>
+            </a>
+
+            <h4 class="h4-info">Description</h4>
+            <p>
+                Travelling along the Adriatic coast towards the northern Dalmatia, between
+                two historical cities of Zadar and Šibenik, you will come across a natural
+                phenomenon – the two equally beautiful and yet so very different shades of
+                blue. On one side you will see the well indented Adriatic coast, famous
+                for its alluring beauty and clear sea, and on the other side you will see
+                the largest natural lake in Croatia.
+            </p>
+            <p>
+                Because of its rare natural habitats, fresh water springs and
+                biodiversity, Vransko Lake and its surroundings have been declared a
+                Nature Park on July 21st, 1999. The Park limits are between Pirovac and
+                Pakoštane. It stretches across 57 km², 30,02km² of that being the lake
+                area itself, which stretches in direction north-west to the south-east,
+                parallel with the sea coast, from which it is, in some places, less than a
+                kilometre apart. The lake is unique because of its position and
+                characteristics, not only in Croatia, but in other parts of Europe too. It
+                is, in fact, a karst valley filled with brackish water as well as
+                cryptodepression, which means that a portion of the lake lies below sea
+                level.
+            </p>
+            <p>
+                When you visit us, you will be far away from civilization and yet so near.
+                Come and enjoy the world of nature in our park with genuine curiosity and
+                joy, and you will find the peace and satisfaction which comes from
+                becoming one with nature.
+            </p>
+
+            <h4 class="h4-info">Location</h4>
+            <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d92009.06955186161!2d15.504641730685867!3d43.8913963614046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1334cd75e4beb0c5%3A0x7e0daabc3eda0701!2sVransko%20jezero!5e0!3m2!1shr!2shr!4v1638909661299!5m2!1shr!2shr"
+                    width="600"
+                    height="450"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+            ></iframe>
+        </section>
+    </div>
+{% endblock content %}

@@ -1,0 +1,150 @@
+{% extends 'locations_base.html' %}
+{% block title %} Cave Park Grabovača {% endblock title %}
+{% block content %}
+
+    <div class="container-lg location-container">
+        <section>
+            <h1 class="location-title">Cave Park Grabovača</h1>
+
+            <!-- Slideshow Container -->
+
+            <div
+                    id="slideshow-container"
+                    class="carousel slide"
+                    data-ride="carousel"
+                    data-interval="false"
+            >
+                <!-- Indikatori -->
+
+                <div class="carousel-indicators">
+                    <button
+                            type="button"
+                            data-bs-target="#slideshow-container"
+                            data-bs-slide-to="0"
+                            class="active"
+                    ></button>
+                    <button
+                            type="button"
+                            data-bs-target="#slideshow-container"
+                            data-bs-slide-to="1"
+                    ></button>
+                    <button
+                            type="button"
+                            data-bs-target="#slideshow-container"
+                            data-bs-slide-to="2"
+                    ></button>
+                </div>
+
+                <!-- Slike -->
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img
+                                src="{{ url_for('static', filename='location_photos/grabovaca-1.jpg') }}"
+                                class="d-block w-100"
+                                alt="grabovaca-photo"
+                        />
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                                src="{{ url_for('static', filename='location_photos/grabovaca-2.jpg') }}"
+                                class="d-block w-100"
+                                alt="grabovaca-photo"
+                        />
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                                src="{{ url_for('static', filename='location_photos/grabovaca-3.jpg') }}"
+                                class="d-block w-100"
+                                alt="grabovaca-photo"
+                        />
+                    </div>
+                </div>
+                <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-target="#slideshow-container"
+                        data-slide="prev"
+                >
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-target="#slideshow-container"
+                        data-slide="next"
+                >
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <h4>About</h4>
+            <hr class="in-section-separator"/>
+
+            <div class="attributes-container">
+      <span class="location-attribute"
+      ><img src="{{ url_for('static', filename='icons/icons8-clock-32.png') }}" alt="duration"/> 8h</span
+      >
+                <br/>
+                <span class="location-attribute"
+                ><img src="{{ url_for('static', filename='icons/icons8-trekking-30.png') }}" alt="type"/> Hiking</span
+                >
+                <br/>
+                <span class="location-attribute">
+        <img src="{{ url_for('static', filename='icons/icons8-cycling-mountain-bike-30.png') }}" alt="type"/>
+        Biking
+      </span>
+            </div>
+
+            <h4 class="h4-info">Price</h4>
+            <p>
+                Tour guide and entrance to cave Samograd are the only attractions that
+                require payment <br/>
+                * Children under 5 - Free <br/>
+                * Children, students, retirees (group up to 10 people) - 30,00kn <br/>
+                * Children, students, retirees (group over 10 people) - 20,00kn <br/>
+                * Grown ups (group up to 10 people) - 40,00kn <br/>
+                * Grown ups (group over 10 people) - 30,00kn <br/>
+                * Tour guide's services per group - 270,00kn <br/>
+            </p>
+
+            <h4 class="h4-info">Description</h4>
+            <p>
+                Cave park Grabovača, located in Perušić, is the only cave park in Europe
+                which allows visitors to experience the past, thousands of years back.
+                Landscape diversity offers a variety of activities: hiking, trailing and
+                trekking, swimming, canoeing or cycling (more than 240km of cycling routes
+                – city, forest or combined).
+            </p>
+            <p>
+                This area has been a scene of intense and continued human activity
+                throughout history; from the Prehistoric Period up to this day. The Park
+                is abundant with cultural and historical heritage. The area of the Park
+                includes the Old town of Perušić, whose locality was mentioned in the
+                Buška Parish in 1071 AD under the name Vrhovina.
+            </p>
+            <p>
+                The Cave Park Grabovača gives the visitors the opportunity to go a
+                thousand years back in history. There are many different contents for
+                visitors to explore: from educational trails and programs, walking, hiking
+                and cycling trails, rafting on Lika, kayaking, and different sport fields,
+                to the touristic attractions such as the Samograd Cave, the “Ploče”
+                lookout, the mediaeval locality of the Old town of Perušić, and the Gothic
+                Church of the St Cross.
+            </p>
+
+            <h4 class="h4-info">Location</h4>
+            <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d721954.6140656604!2d14.439432930092085!3d45.02218062289389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4763d60f1768f519%3A0x2268f385d52ff4df!2sPe%C4%87inski%20park%20Grabova%C4%8Da!5e0!3m2!1shr!2shr!4v1638532483610!5m2!1shr!2shr"
+                    width="600"
+                    height="450"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+            ></iframe>
+        </section>
+    </div>
+
+{% endblock content %}

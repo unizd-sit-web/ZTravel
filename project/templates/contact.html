@@ -1,0 +1,31 @@
+{% extends 'base.html' %} {% block weatherWidget %} {% endblock weatherWidget %}
+{% block content %}
+
+    <div class="container">
+        <section>
+            <h4 class="h4-info">Contact us</h4>
+            <hr/>
+            <img
+                    src="{{ url_for('static', filename='icons/icons8-email-open-50.png') }}"
+                    alt="email-icon"
+                    class="contact-icon"
+            />
+            <p>
+                For all questions, suggestions, inquires, praises, rebukes or any other
+                ideas you have in mind, you can mail us at
+                <a href="mailto: fakemail@fakehost.com">fakemail@fakehost.com</a>.
+            </p>
+            <img
+                    src="{{ url_for('static', filename='icons/icons8-whatsapp-50.png') }}"
+                    alt="whatsapp-icon"
+                    class="contact-icon"
+            />
+            <p>You can also contact us using WhatsApp</p>
+            <ul>
+                <li>+385 95 0000 000</li>
+                <li>+385 98 0000 111</li>
+                <li>+385 99 0000 000</li>
+            </ul>
+        </section>
+    </div>
+{% endblock content %}

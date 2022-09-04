@@ -1,0 +1,594 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1 class="section-header">DISCOVER ZADAR COUNTY</h1>
+<hr class="main-separator"/>
+
+<!-- Thumbnails -->
+
+<div class="container-lg">
+    <div class="row">
+        <div class="col-lg-4 page-1">
+            <a href="{{ url_for('locations.plitvicka_jezera') }}">
+                <img
+                        src="{{ url_for('static',filename='location_photos/plitvice-1.jpg') }}"
+                        alt="location thumbnail"
+                        class="img-thumbnail"
+                />
+            </a>
+            <article class="thumbnail-text">
+                <h5>
+                    Plitvice Lakes National Park
+                </h5>
+                <p>
+                    Spend a day exploring Plitvice Lakes National Park on a day tour
+                    from Omiš. This UNESCO-listed site is one of Europe's oldest
+                    national parks.
+                </p>
+                <div class="attributes-container">
+              <span class="location-attribute"
+              ><img src="{{ url_for('static',filename='icons/icons8-clock-32.png') }}" alt="duration"/>
+                4h</span
+              >
+                    <span class="location-attribute"
+                    ><img src="{{ url_for('static',filename='icons/icons8-holiday-30.png') }}" alt="type"/>
+                Relaxing</span
+                    >
+
+                    <span class="location-attribute">
+                <img
+                        src="{{ url_for('static',filename='icons/icons8-kid-friendly-30.png') }}"
+                        alt="kid-friendly"
+                />
+                Kid-friendly
+              </span>
+                </div>
+            </article>
+        </div>
+
+        <div class="col-lg-4 page-1">
+            <a href="{{ url_for('locations.krka') }}">
+                <img
+                        src="{{ url_for('static',filename='location_photos/krka-1.jpg') }}"
+                        alt="location thumbnail"
+                        class="img-thumbnail"
+                />
+            </a>
+            <article class="thumbnail-text">
+                <h5>Krka National Park</h5>
+                <p>
+                    Spend a day on your visit to Croatia exploring spellbinding Krka
+                    National Park. Walk on wooden pathways by the many lakes, falls,
+                    and waterways. Marvel at Skradinski buk, a spectacular cliff
+                    waterfall.
+                </p>
+                <div class="attributes-container">
+              <span class="location-attribute"
+              ><img src="{{ url_for('static',filename='icons/icons8-clock-32.png') }}" alt="duration"/> 5h<span
+                      class="location-attribute"
+              ></span>
+                <img src="{{ url_for('static',filename='icons/icons8-holiday-30.png') }}" alt="type"/>
+                Relaxing
+              </span>
+                    <span class="location-attribute">
+                <img
+                        src="{{ url_for('static',filename='icons/icons8-kid-friendly-30.png') }}"
+                        alt="kid-friendly"
+                />
+                Kid-friendly
+              </span>
+                </div>
+            </article>
+        </div>
+
+        <div class="col-lg-4 page-1">
+            <a href="{{ url_for('locations.kudin') }}">
+                <img
+                        src="{{ url_for('static',filename='location_photos/kudin-1.jpg') }}"
+                        alt="location thumbnail"
+                        class="img-thumbnail"
+                /></a>
+            <article class="thumbnail-text">
+                <h5>"Kudin most" on Krupa river</h5>
+                <p>
+                    Kudin most is a bridge in Croatia. Kudin most is situated in
+                    Nusak, close to Mlin kod stupe. The bridge was built in drywall,
+                    at the turn of the 18th to the 19th century and is named after his
+                    creator Kude.
+                </p>
+                <div class="attributes-container">
+              <span class="location-attribute"
+              ><img src="{{ url_for('static',filename='icons/icons8-clock-32.png') }}" alt="duration"/>
+                3h</span
+              >
+                    <span class="location-attribute"
+                    ><img src="{{ url_for('static',filename='icons/icons8-trekking-30.png') }}" alt="type"/>
+                Hiking</span
+                    >
+                    <span class="location-attribute"
+                    ><img src="{{ url_for('static',filename='icons/free.png') }}" alt="free"/> Free</span
+                    >
+                    <span class="location-attribute">
+                <img
+                        src="{{ url_for('static',filename='icons/icons8-kid-friendly-30.png') }}"
+                        alt="kid-friendly"
+                />
+                Kid-friendly
+              </span>
+                </div>
+            </article>
+        </div>
+
+        <div class="col-lg-4 page-1">
+            <a href="{{ url_for('locations.vransko_jezero') }}">
+                <img
+                        src="{{ url_for('static',filename='location_photos/vransko-1.jpg') }}"
+                        alt="location thumbnail"
+                        class="img-thumbnail"
+                /></a>
+            <article class="thumbnail-text">
+                <h5>Nature park Vransko lake</h5>
+                <p>
+                    For those preferring physically less demanding way of enjoying the
+                    world of nature, the Vrana Lake Nature Park is perfect. It
+                    consists of the largest lake in Croatia and its surrounding area.
+                    Located in the vicinity of the sea, the lake is home to
+                    exceptional number of bird species, to wild ducks and egrets in
+                    particular.
+                </p>
+                <div class="attributes-container">
+              <span class="location-attribute">
+                <img src="{{ url_for('static',filename='icons/icons8-clock-32.png') }}" alt="duration"/>
+                3h
+              </span>
+                    <span class="location-attribute">
+                <img src="{{ url_for('static',filename='icons/icons8-holiday-30.png') }}" alt="type"/>
+                Relaxing
+              </span>
+                    <span class="location-attribute">
+                <img
+                        src="{{ url_for('static',filename='icons/icons8-cycling-mountain-bike-30.png') }}"
+                        alt="type"
+                />
+                Biking
+              </span>
+                    <span class="location-attribute">
+                <img
+                        src="{{ url_for('static',filename='icons/icons8-kid-friendly-30.png') }}"
+                        alt="kid-friendly"
+                />
+                Kid-friendly
+              </span>
+                </div>
+            </article>
+        </div>
+
+        <div class="col-lg-4 page-1">
+            <a href="{{ url_for('locations.mars_trail') }}">
+                <img
+                        src="{{ url_for('static',filename='location_photos/life-on-mars-1.jpeg') }}"
+                        alt="location thumbnail"
+                        class="img-thumbnail"
+                /></a>
+            <article class="thumbnail-text">
+                <h5>Life On Mars Trail</h5>
+                <p>
+                    One of the most beautiful trails in Croatia “Life on Mars” has
+                    been officially opened in 2019 for all visitors all year round.
+                    Follow the trails which lead through Metajna in Novalja to
+                    experience an unforgettable spiritual journey and discover the
+                    most beautiful beaches of the island of Pag.
+                </p>
+                <div class="attributes-container">
+              <span class="location-attribute"
+              ><img src="{{ url_for('static',filename='icons/icons8-clock-32.png') }}" alt="duration"/>
+                3h</span
+              >
+                    <span class="location-attribute"
+                    ><img src="{{ url_for('static',filename='icons/icons8-trekking-30.png') }}" alt="type"/>
+                Hiking</span
+                    >
+                    <span class="location-attribute"
+                    ><img src="{{ url_for('static',filename='icons/free.png') }}" alt="free"/> Free</span
+                    >
+                </div>
+            </article>
+        </div>
+
+        <div class="col-lg-4 page-1">
+            <a href="{{ url_for('locations.tulove_grede') }}">
+                <img
+                        src="{{ url_for('static',filename='location_photos/tulove-grede-1.jpg') }}"
+                        alt="location thumbnail"
+                        class="img-thumbnail"
+                /></a>
+            <article class="thumbnail-text">
+                <h5>Tulove Grede</h5>
+                <p>
+                    Tulove grede are one of the most scenic parts of Velebit. It is a
+                    2.6 kilometer out and back trail located 50km from Zadar.
+                </p>
+                <div class="attributes-container">
+              <span class="location-attribute"
+              ><img src="{{ url_for('static',filename='icons/icons8-clock-32.png') }}" alt="duration"/>
+                3h</span
+              >
+                    <span class="location-attribute"
+                    ><img src="{{ url_for('static',filename='icons/icons8-trekking-30.png') }}" alt="type"/>
+                Hiking</span
+                    >
+                    <span class="location-attribute"
+                    ><img src="{{ url_for('static',filename='icons/free.png') }}" alt="free"/> Free</span
+                    >
+                </div>
+            </article>
+        </div>
+
+        <div class="col-lg-4 page-2">
+            <a href="{{ url_for('locations.grabovaca') }}">
+                <img
+                        src="{{ url_for('static',filename='location_photos/grabovaca-1.jpg') }}"
+                        alt="location thumbnail"
+                        class="img-thumbnail"
+                />
+            </a>
+            <article class="thumbnail-text">
+                <h5>Cave Park Grabovača</h5>
+                <p>
+                    Cave park Grabovača, located in Perušić, is the only cave park in
+                    Europe which allows visitors to experience the past, thousands of
+                    years back.
+                </p>
+                <div class="attributes-container">
+              <span class="location-attribute"
+              ><img src="{{ url_for('static',filename='icons/icons8-clock-32.png') }}" alt="duration"/>
+                8h</span
+              >
+                    <span class="location-attribute"
+                    ><img src="{{ url_for('static',filename='icons/icons8-trekking-30.png') }}" alt="type"/>
+                Hiking</span
+                    >
+                    <span class="location-attribute">
+                <img
+                        src="{{ url_for('static',filename='icons/icons8-cycling-mountain-bike-30.png') }}"
+                        alt="type"
+                />
+                Biking
+              </span>
+                </div>
+            </article>
+        </div>
+
+        <div class="col-lg-4 page-2">
+            <a href="{{ url_for('locations.kornati') }}">
+                <img
+                        src="{{ url_for('static',filename='location_photos/kornati-1.jpg') }}"
+                        alt="location thumbnail"
+                        class="img-thumbnail"
+                />
+            </a>
+            <article class="thumbnail-text">
+                <h5>Kornati National Park</h5>
+                <p>
+                    Spend a day touring Kornati National Park, one of the most magical
+                    places in Croatia. This group of more than 100 islands and cliffs
+                    will seduce you at first sight as you ride along.
+                </p>
+                <div class="attributes-container">
+              <span class="location-attribute"
+              ><img src="{{ url_for('static',filename='icons/icons8-clock-32.png') }}" alt="duration"/> 5h<span
+                      class="location-attribute"
+              ></span>
+                <img src="{{ url_for('static',filename='icons/icons8-holiday-30.png') }}" alt="type"/>
+                Relaxing
+              </span>
+                    <span class="location-attribute"
+                    ><img src="{{ url_for('static',filename='icons/icons8-windsurfing-30.png') }}" alt="type"/>
+                Watersports</span
+                    >
+                </div>
+            </article>
+        </div>
+
+        <div class="col-lg-4 page-2">
+            <a href="{{ url_for('locations.una') }}">
+                <img
+                        src="{{ url_for('static',filename='location_photos/una-1.jpg') }}"
+                        alt="location thumbnail"
+                        class="img-thumbnail"
+                />
+            </a>
+            <article class="thumbnail-text">
+                <h5>Una's source</h5>
+                <p>
+                    The Una River is a natural border between Croatia and Bosnia. It
+                    will steal your heart with her virgin beauty, green clear water
+                    and a landscape of dense forests.
+                </p>
+                <div class="attributes-container">
+              <span class="location-attribute"
+              ><img src="{{ url_for('static',filename='icons/icons8-clock-32.png') }}" alt="duration"/>
+                7h</span
+              >
+                    <span class="location-attribute"
+                    ><img src="{{ url_for('static',filename='icons/icons8-trekking-30.png') }}" alt="type"/>
+                Hiking</span
+                    >
+                    <span class="location-attribute"
+                    ><img src="{{ url_for('static',filename='icons/free.png') }}" alt="free"/> Free</span
+                    >
+                </div>
+            </article>
+        </div>
+
+        <div class="col-lg-4 page-2">
+            <a href="{{ url_for('locations.velebit') }}">
+                <img
+                        src="{{ url_for('static',filename='location_photos/velebit-1.jpg') }}"
+                        alt="location thumbnail"
+                        class="img-thumbnail"
+                />
+            </a>
+            <article class="thumbnail-text">
+                <h5>Northern Velebit National Park</h5>
+                <p>
+                    Northern Velebit National Park is in the northern part of
+                    Croatia's largest mountain range and also the youngest National
+                    park. Don't miss out!
+                </p>
+                <div class="attributes-container">
+              <span class="location-attribute"
+              ><img src="{{ url_for('static',filename='icons/icons8-clock-32.png') }}" alt="duration"/>
+                5h</span
+              >
+                    <span class="location-attribute"
+                    ><img src="{{ url_for('static',filename='icons/icons8-trekking-30.png') }}" alt="type"/>
+                Hiking</span
+                    >
+                    <span class="location-attribute"
+                    ><img src="{{ url_for('static',filename='icons/free.png') }}" alt="free"/> Free</span
+                    >
+                </div>
+            </article>
+        </div>
+
+        <div class="col-lg-4 page-2">
+            <a href="{{ url_for('locations.paklenica') }}">
+                <img
+                        src="{{ url_for('static',filename='location_photos/paklenica-2.jpg') }}"
+                        alt="location thumbnail"
+                        class="img-thumbnail"
+                />
+            </a>
+            <article class="thumbnail-text">
+                <h5>Paklenica National Park</h5>
+                <p>
+                    isit the home of captivating legends and thrilling adventures,
+                    sandy and pebble beaches, hundreds of plant and animal species
+                    listed by UNESCO and Winnetou movies!
+                </p>
+                <div class="attributes-container">
+              <span class="location-attribute"
+              ><img src="{{ url_for('static',filename='icons/icons8-clock-32.png') }}" alt="duration"/>
+                5h</span
+              >
+                    <span class="location-attribute"
+                    ><img src="{{ url_for('static',filename='icons/icons8-trekking-30.png') }}" alt="type"/>
+                Hiking</span
+                    >
+                    <span class="location-attribute">
+                <img
+                        src="{{ url_for('static',filename='icons/icons8-cycling-mountain-bike-30.png') }}"
+                        alt="type"
+                />
+                Biking
+              </span>
+                </div>
+            </article>
+        </div>
+
+        <div class="col-lg-4 page-2">
+            <a href="{{ url_for('locations.zrmanja') }}">
+                <img
+                        src="{{ url_for('static',filename='location_photos/zrmanja-rafting-1.jpg') }}"
+                        alt="location thumbnail"
+                        class="img-thumbnail"
+                />
+            </a>
+            <article class="thumbnail-text">
+                <h5>Zrmanja rafting</h5>
+                <p>
+                    Zrmanja and Krupa are among the most beautiful rivers in Europe:
+                    perfectly clear warm water, spectacular canyon with magnificent
+                    waterfall. They are easy and safe enough for beginner canoeists
+                    but their scenery makes them also very exciting. The trip begins
+                    in Kastel Zegarski, only one hour drive from Zadar.
+                </p>
+                <div class="attributes-container">
+              <span class="location-attribute"
+              ><img src="{{ url_for('static',filename='icons/icons8-clock-32.png') }}" alt="duration"/>
+                5h</span
+              >
+                    <span class="location-attribute">
+                <img
+                        src="{{ url_for('static',filename='icons/icons8-windsurfing-30.png') }}"
+                        alt="kid-friendly"
+                />
+                Watersports
+              </span>
+
+                    <span class="location-attribute">
+                <img
+                        src="{{ url_for('static',filename='icons/icons8-kid-friendly-30.png') }}"
+                        alt="kid-friendly"
+                />
+                Kid-friendly
+              </span>
+                </div>
+            </article>
+        </div>
+
+        <div class="col-lg-4 page-3">
+            <a href="{{ url_for('locations.cetina_spring') }}">
+                <img
+                        src="{{ url_for('static',filename='location_photos/cetina-1.jpg') }}"
+                        alt="location thumbnail"
+                        class="img-thumbnail"
+                />
+            </a>
+            <article class="thumbnail-text">
+                <h5>Cetina spring</h5>
+                <p>
+                    This splendid spring has an extraordinary shape and color and is
+                    one of the sources of the longest river in Dalmatia – the Cetina.
+                    It runs for about 65 miles before letting out into the Adriatic
+                    Sea. Its waters flow at the foot of the Dinara, the highest
+                    mountain massif in Croatia.
+                </p>
+                <div class="attributes-container">
+              <span class="location-attribute"
+              ><img src="{{ url_for('static',filename='icons/icons8-clock-32.png') }}" alt="duration"/>
+                1h</span
+              >
+                    <span class="location-attribute">
+                <img src="{{ url_for('static',filename='icons/icons8-holiday-30.png') }}" alt="type"/>
+                Relaxing
+              </span>
+                    <span class="location-attribute">
+                <img
+                        src="{{ url_for('static',filename='icons/icons8-kid-friendly-30.png') }}"
+                        alt="kid-friendly"
+                />
+                Kid-friendly
+              </span>
+                    <span class="location-attribute"
+                    ><img src="{{ url_for('static',filename='icons/free.png') }}" alt="free"/> Free</span
+                    >
+                </div>
+            </article>
+        </div>
+
+        <div class="col-lg-4 page-3">
+            <a href="{{ url_for('locations.cetina_rafting') }}">
+                <img
+                        src="{{ url_for('static',filename='location_photos/cetina-rafting-1.jpg') }}"
+                        alt="location thumbnail"
+                        class="img-thumbnail"
+                />
+            </a>
+            <article class="thumbnail-text">
+                <h5>Cetina rafting</h5>
+                <p>
+                    Cetina River is a great way to enjoy a breathtaking scenery. Due
+                    to its waterfalls, caves and jungle-like vegetation make it a
+                    must-do activity while in Croatia. The warm Mediterranean climate
+                    meets the canyon and creates a setting just like in a fairy tale.
+                    Even though the rapids of this river are relatively easy, it will
+                    create a memorable experience for all.
+                </p>
+                <div class="attributes-container">
+              <span class="location-attribute"
+              ><img src="{{ url_for('static',filename='icons/icons8-clock-32.png') }}" alt="duration"/>
+                4h</span
+              >
+                    <span class="location-attribute">
+                <img
+                        src="{{ url_for('static',filename='icons/icons8-windsurfing-30.png') }}"
+                        alt="kid-friendly"
+                />
+                Watersports
+              </span>
+                    <span class="location-attribute">
+                <img
+                        src="{{ url_for('static',filename='icons/icons8-kid-friendly-30.png') }}"
+                        alt="kid-friendly"
+                />
+                Kid-friendly
+              </span>
+                </div>
+            </article>
+        </div>
+
+
+        <div class="col-lg-4 page-3">
+            <a href="{{ url_for('locations.silba') }}">
+                <img
+                        src="{{ url_for('static',filename='location_photos/silba-1.jpg') }}"
+                        alt="location thumbnail"
+                        class="img-thumbnail"
+                />
+            </a>
+            <article class="thumbnail-text">
+                <h5>Silba Island</h5>
+                <p>
+                    Explore stunning island on your next boat trip.You will enjoy swimming
+                    in crystal clear sea and private sandy bays.Experience the island life
+                    and enjoy the hidden beauty on Silba.Visit the island of Love &
+                    captains, island with no cars – unique island Silba.
+                </p>
+                <div class="attributes-container">
+            <span class="location-attribute"
+            ><img src="{{ url_for('static',filename='icons/icons8-clock-32.png') }}" alt="duration"/>
+              7h</span
+            >
+                    <span class="location-attribute"
+                    ><img src="{{ url_for('static',filename='icons/icons8-holiday-30.png') }}" alt="type"/>
+              Relaxing</span
+                    >
+                    <span class="location-attribute">
+              <img
+                      src="{{ url_for('static',filename='icons/icons8-kid-friendly-30.png') }}"
+                      alt="kid-friendly"
+              />
+              Kid-friendly
+            </span>
+                </div>
+            </article>
+        </div>
+    </div>
+</div>
+
+<!-- Navigation -->
+
+<nav class="locations-nav">
+    <ul class="pagination">
+        <li class="page-item">
+            <button class="page-link" onclick="myFunction(1)">1</button>
+        </li>
+        <li class="page-item">
+            <button class="page-link" onclick="myFunction(2)">2</button>
+        </li>
+        <li class="page-item">
+            <button class="page-link" onclick="myFunction(3)">3</button>
+        </li>
+    </ul>
+</nav>
+
+{% endblock content %}
+
+{% block jsScript %}
+
+<script>
+    function myFunction(pageNum) {
+        const pageThumbnails = document.getElementsByClassName("page-" + pageNum);
+
+        let tempPageThumbnails;
+        for (let index = 1; index <= 3; index++) {
+            if (index !== pageNum) {
+                tempPageThumbnails = document.getElementsByClassName(
+                    "page-" + index
+                );
+                for (var i = 0; i < tempPageThumbnails.length; i++) {
+                    tempPageThumbnails[i].style.display = "none";
+                }
+            }
+        }
+        for (var i = 0; i < pageThumbnails.length; i++) {
+            pageThumbnails[i].style.display = "block";
+        }
+    }
+</script>
+
+{% endblock jsScript %}
+
