@@ -1,0 +1,44 @@
+{% extends 'base.html' %}{% block weatherWidget %} {% endblock weatherWidget %}
+{% block title %} Sign In {% endblock title %}
+{% block content %}
+
+    <div class="container form-container">
+        <h4 class="h4-info">Sign In</h4>
+        <hr/>
+
+        <form method="POST">
+            {{ form.hidden_tag() }}
+            <div class="form-group">
+                {{ form.email.label(class="form-control-label") }}
+                {% if form.email.errors %}
+                    {{ form.email(class="form-control form-control-lg is-invalid") }}
+                    <div class="invalid-feedback">
+                        {% for error in form.email.errors %}
+                            <span>{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    {{ form.email(class="form-control form-control-lg mb-3") }}
+                {% endif %}
+            </div>
+            <div class="form-group">
+                {{ form.password.label(class="form-control-label") }}
+                {% if form.password.errors %}
+                    {{ form.password(class="form-control form-control-lg is-invalid") }}
+                    <div class="invalid-feedback">
+                        {% for error in form.password.errors %}
+                            <span>{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    {{ form.password(class="form-control form-control-lg mb-3") }}
+                {% endif %}
+            </div>
+            <div class="form-group">
+                {{ form.submit(class='btn btn-secondary btn-blue-color') }}
+            </div>
+            <small class="form-text text-muted">Don't have an account?
+                <a href="{{ url_for('users.register') }}">Register</a></small>
+        </form>
+    </div>
+{% endblock content %}

@@ -75,6 +75,35 @@
                 </li>
             </ul>
 
+            {% if email %}
+                <span>{{ email }}</span>
+                <a href="{{ url_for('users.sign_out') }}">
+                    <button
+                            type="button"
+                            class="btn btn-secondary btn-blue-color m-lg-2"
+                    >
+                        Sign Out
+                    </button>
+                </a>
+            {% else %}
+                <a href="{{ url_for('users.sign_in') }}">
+                    <button
+                            type="button"
+                            class="btn btn-secondary btn-blue-color m-lg-2"
+                    >
+                        Sign In
+                    </button>
+                </a>
+                <a href="{{ url_for('users.register') }}">
+                    <button
+                            type="button"
+                            class="btn btn-secondary btn-blue-color m-lg-2"
+                    >
+                        Register
+                    </button>
+                </a>
+            {% endif %}
+
         </div>
     </nav>
 </div>

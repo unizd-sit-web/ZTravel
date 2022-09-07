@@ -1,5 +1,5 @@
 from project import app
-from flask import render_template
+from flask import render_template, session
 
 
 @app.route('/')
@@ -21,4 +21,4 @@ if __name__ == '__main__':
     app.run()
 
 # $env:FLASK_DEBUG=1
-# $env:FLASK_APP="app.py"
+# $env:FLASK_APP="app.py" 
