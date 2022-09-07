@@ -2,132 +2,136 @@
 {% block title %} Cetina rafting {% endblock title %}
 {% block content %}
 
-<div class="container-lg location-container">
-    <section>
-        <h1 class="location-title">Cetina rafting</h1>
+    <div class="container-lg location-container">
+        <section>
+            <h1 class="location-title">Cetina rafting
+                {% block favorite_snippet %}
+                    {{ super() }}
+                {% endblock favorite_snippet %}
+            </h1>
 
-        <!-- Slideshow Container -->
+            <!-- Slideshow Container -->
 
-        <div
-                id="slideshow-container"
-                class="carousel slide"
-                data-ride="carousel"
-                data-interval="false"
-        >
-            <!-- Indikatori -->
+            <div
+                    id="slideshow-container"
+                    class="carousel slide"
+                    data-ride="carousel"
+                    data-interval="false"
+            >
+                <!-- Indikatori -->
 
-            <div class="carousel-indicators">
+                <div class="carousel-indicators">
+                    <button
+                            type="button"
+                            data-bs-target="#slideshow-container"
+                            data-bs-slide-to="0"
+                            class="active"
+                    ></button>
+                    <button
+                            type="button"
+                            data-bs-target="#slideshow-container"
+                            data-bs-slide-to="1"
+                    ></button>
+                    <button
+                            type="button"
+                            data-bs-target="#slideshow-container"
+                            data-bs-slide-to="2"
+                    ></button>
+                </div>
+
+                <!-- Slike -->
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img
+                                src="{{ url_for('static', filename='location_photos/zrmanja-rafting-1.jpg') }}"
+                                class="d-block w-100"
+                                alt="plitvice-photo"
+                        />
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                                src="{{ url_for('static', filename='location_photos/zrmanja-rafting-2.jpg') }}"
+                                class="d-block w-100"
+                                alt="plitvice-photo"
+                        />
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                                src="{{ url_for('static', filename='location_photos/zrmanja-rafting-3.jpg') }}"
+                                class="d-block w-100"
+                                alt="plitvice-photo"
+                        />
+                    </div>
+                </div>
                 <button
+                        class="carousel-control-prev"
                         type="button"
-                        data-bs-target="#slideshow-container"
-                        data-bs-slide-to="0"
-                        class="active"
-                ></button>
+                        data-target="#slideshow-container"
+                        data-slide="prev"
+                >
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
                 <button
+                        class="carousel-control-next"
                         type="button"
-                        data-bs-target="#slideshow-container"
-                        data-bs-slide-to="1"
-                ></button>
-                <button
-                        type="button"
-                        data-bs-target="#slideshow-container"
-                        data-bs-slide-to="2"
-                ></button>
+                        data-target="#slideshow-container"
+                        data-slide="next"
+                >
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
 
-            <!-- Slike -->
+            <h4>About</h4>
+            <hr class="in-section-separator"/>
 
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img
-                            src="{{ url_for('static', filename='location_photos/zrmanja-rafting-1.jpg') }}"
-                            class="d-block w-100"
-                            alt="plitvice-photo"
-                    />
-                </div>
-                <div class="carousel-item">
-                    <img
-                            src="{{ url_for('static', filename='location_photos/zrmanja-rafting-2.jpg') }}"
-                            class="d-block w-100"
-                            alt="plitvice-photo"
-                    />
-                </div>
-                <div class="carousel-item">
-                    <img
-                            src="{{ url_for('static', filename='location_photos/zrmanja-rafting-3.jpg') }}"
-                            class="d-block w-100"
-                            alt="plitvice-photo"
-                    />
-                </div>
-            </div>
-            <button
-                    class="carousel-control-prev"
-                    type="button"
-                    data-target="#slideshow-container"
-                    data-slide="prev"
-            >
-                <span class="carousel-control-prev-icon"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-                    class="carousel-control-next"
-                    type="button"
-                    data-target="#slideshow-container"
-                    data-slide="next"
-            >
-                <span class="carousel-control-next-icon"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-
-        <h4>About</h4>
-        <hr class="in-section-separator"/>
-
-        <div class="attributes-container">
+            <div class="attributes-container">
       <span class="location-attribute"
       ><img src="{{ url_for('static', filename='icons/icons8-clock-32.png') }}" alt="duration"/> 4h</span
       >
-            <br/>
-            <span class="location-attribute">
+                <br/>
+                <span class="location-attribute">
         <img src="{{ url_for('static', filename='icons/icons8-windsurfing-30.png') }}" alt="kid-friendly"/>
         Watersports
       </span>
-            <br/>
-            <span class="location-attribute">
+                <br/>
+                <span class="location-attribute">
         <img src="{{ url_for('static', filename='icons/icons8-kid-friendly-30.png') }}" alt="kid-friendly"/>
         Kid-friendly
       </span>
-        </div>
+            </div>
 
-        <h4 class="h4-info">Price</h4>
-        <p>
-            35€ per person.<br/>
-            Minimum age is 8 years.<br/>
-        </p>
+            <h4 class="h4-info">Price</h4>
+            <p>
+                35€ per person.<br/>
+                Minimum age is 8 years.<br/>
+            </p>
 
-        <h4 class="h4-info">Description</h4>
-        <p>
-            Rafting on Cetina River is the most popular and most attended adventure
-            tour in Split area. Rafting in protected area of the Cetina river canyon
-            attracts many tourists every summer. The quiet parts of the river and the
-            second and third grade rapids enable a three-hour combination of adventure
-            in the amazing Cetina river canyon. Rafting tour on Cetina river is filled
-            with peaceful green pools perfect for swimming, splashing or floating
-            alongside in perfect tranquility between rapids.
-            <br/>
-            Rafting on Cetina river is suitable for beginners and can be also enjoyed
-            by experienced adventurers.
-        </p>
+            <h4 class="h4-info">Description</h4>
+            <p>
+                Rafting on Cetina River is the most popular and most attended adventure
+                tour in Split area. Rafting in protected area of the Cetina river canyon
+                attracts many tourists every summer. The quiet parts of the river and the
+                second and third grade rapids enable a three-hour combination of adventure
+                in the amazing Cetina river canyon. Rafting tour on Cetina river is filled
+                with peaceful green pools perfect for swimming, splashing or floating
+                alongside in perfect tranquility between rapids.
+                <br/>
+                Rafting on Cetina river is suitable for beginners and can be also enjoyed
+                by experienced adventurers.
+            </p>
 
-        <h4 class="h4-info">Location</h4>
-        <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11587.285404473836!2d16.702101541769885!3d43.44344697113477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134a99ec02cc216b%3A0xa5883034712c00b7!2sRafting%20Cetina!5e0!3m2!1sen!2shr!4v1638916112042!5m2!1sen!2shr"
-                width="600"
-                height="450"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-        ></iframe>
-    </section>
-</div>
+            <h4 class="h4-info">Location</h4>
+            <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11587.285404473836!2d16.702101541769885!3d43.44344697113477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134a99ec02cc216b%3A0xa5883034712c00b7!2sRafting%20Cetina!5e0!3m2!1sen!2shr!4v1638916112042!5m2!1sen!2shr"
+                    width="600"
+                    height="450"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+            ></iframe>
+        </section>
+    </div>
 {% endblock content %}

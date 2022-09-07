@@ -4,7 +4,11 @@
 
     <div class="container-lg location-container">
         <section>
-            <h1 class="location-title">"Kudin most" on Krupa river</h1>
+            <h1 class="location-title">"Kudin most" on Krupa river
+                {% block favorite_snippet %}
+                    {{ super() }}
+                {% endblock favorite_snippet %}
+            </h1>
 
             <!-- Slideshow Container -->
 

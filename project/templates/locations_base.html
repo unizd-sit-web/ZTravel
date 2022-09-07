@@ -1,2 +1,15 @@
 {% extends 'base.html' %}
-<!-- This file will contain common code for locations -->
+{% block favorite_snippet %}
+
+    {% if email %}
+        {% if locationId in favorites %}
+            <a href="{{ url_for('users.unfavorite', locationId=locationId) }}">
+                <img src="{{ url_for('static', filename='icons/icons8-heart-24.png') }}" alt="unfavorite">
+            </a>
+        {% else %}
+            <a href="{{ url_for('users.favorite', locationId=locationId) }}">
+                <img src="{{ url_for('static', filename='icons/icons8-heart-empty-24.png') }}" alt="favorite">
+            </a>
+        {% endif %}
+    {% endif %}
+{% endblock favorite_snippet %}

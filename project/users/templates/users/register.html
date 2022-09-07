@@ -48,6 +48,10 @@
                 {% endif %}
             </div>
             <div class="form-group">
+                {{ form.newsletter(class='form-check-input') }}
+                {{ form.newsletter.label(class="form-control-label") }}
+            </div>
+            <div class="form-group">
                 {{ form.submit(class='btn btn-secondary btn-blue-color mt-3') }}
             </div>
             <small class="form-text text-muted">Already have an account?
