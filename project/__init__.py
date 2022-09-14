@@ -26,7 +26,7 @@ app.config['MAIL_USERNAME'] = 'apikey'
 # TODO Potrebno postaviti svoj SENDGRID_API_KEY u Environment Variables
 app.config['MAIL_PASSWORD'] = os.environ.get('SENDGRID_API_KEY')
 # TODO Potrebno unijeti vlastiti Sendgrid email account
-app.config['MAIL_DEFAULT_SENDER'] = 'ddin0@hotmail.com'
+app.config['MAIL_DEFAULT_SENDER'] = 'ivor.grego@gmail.com'
 
 mail = Mail(app)
 
